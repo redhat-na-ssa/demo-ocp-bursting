@@ -6,4 +6,5 @@ Exploring ways to burst into cloud via OpenShift
 
 ```sh
 oc apply -k gitops
+oc apply -f gitops/dump
 ```
