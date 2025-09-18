@@ -18,8 +18,8 @@ spec:
             #!/bin/bash
 
             echo "
-            GIT_REPO=https://github.com/redhat-na-ssa/demo-ai-devspaces.git
-            GIT_DIR=demo-ai-devspaces
+            GIT_REPO=https://github.com/redhat-na-ssa/demo-ocp-bursting.git
+            GIT_DIR=demo-ocp-bursting
 
             [ -e ~/\${GIT_DIR} ] || git clone \${GIT_REPO}
             [ -e ~/\${GIT_DIR} ] && cd ~/\${GIT_DIR}
