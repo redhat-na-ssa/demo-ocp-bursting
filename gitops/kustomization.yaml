@@ -3,3 +3,4 @@ kind: Kustomization
 
 resources:
   - operators/sandboxed-containers-operator/operator/overlays/stable
+  - operators/web-terminal
