@@ -1,0 +1,24 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: aws-podvm-image-cm
+  namespace: openshift-sandboxed-containers-operator
+data:
+  BUCKET_NAME: ''
+  DOWNLOAD_SOURCES: 'no'
+  CONFIDENTIAL_COMPUTE_ENABLED: 'no'
+  DISABLE_CLOUD_CONFIG: 'true'
+  UPDATE_PEERPODS_CM: 'yes'
+  INSTANCE_TYPE: c4.xlarge
+  AMI_VOLUME_SIZE: '30'
+  ENABLE_NVIDIA_GPU: 'no'
+  NVIDIA_DRIVER_VERSION: '535'
+  PODVM_IMAGE_URI: 'oci::registry.redhat.io/openshift-sandboxed-containers/osc-dm-verity-image@sha256:10431be6ef7be6da1b5749bbf5e6207db92804d3530605b825c0e0d98bd9f46e'
+  PODVM_DISTRO: rhel
+  CAA_SRC: 'https://gitlab.cee.redhat.com/osc/midstream/cloud-api-adaptor'
+  NVIDIA_USERSPACE_VERSION: 1.13.5-1
+  INSTALL_PACKAGES: 'no'
+  BOOT_FIPS: 'no'
+  AMI_VERSION: 0.0.1
+  CAA_REF: v0.8.0-1.6
+  AMI_BASE_NAME: podvm-image

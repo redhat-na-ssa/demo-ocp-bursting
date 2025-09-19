@@ -1,0 +1,10 @@
+apiVersion: kataconfiguration.openshift.io/v1
+kind: KataConfig
+metadata:
+  name: example-kataconfig
+  namespace: openshift-sandboxed-containers-operator
+spec:
+  checkNodeEligibility: false
+  enablePeerPods: true
+  kataConfigPoolSelector: null
+  logLevel: info

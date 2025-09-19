@@ -1,0 +1,23 @@
+# Generated with 
+# https://raw.githubusercontent.com/openshift/sandboxed-containers-operator/refs/tags/v1.10.2/scripts/cm-helpers/pp-cm-helper.sh
+---
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: peer-pods-cm
+  namespace: openshift-sandboxed-containers-operator
+data:
+  PODVM_AMI_ID: ""
+  PODVM_INSTANCE_TYPE: t3.medium
+  VXLAN_PORT: '9000'
+  CLOUD_CONFIG_VERIFY: 'false'
+  SSH_KP_NAME: ocpkey
+  AWS_SG_IDS: ""
+  PROXY_TIMEOUT: 15m
+  DISABLECVM: 'true'
+  PODVM_INSTANCE_TYPES: 't2.small,t2.medium,t3.large'
+  AWS_VPC_ID: ""
+  AWS_REGION: us-east-2
+  CLOUD_PROVIDER: aws
+  AWS_SUBNET_ID: ""
+  ENABLE_CLOUD_PROVIDER_EXTERNAL_PLUGIN: 'false'
